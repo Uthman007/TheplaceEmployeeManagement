@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using TheplaceEmployeeManagement.Models;
 
 namespace TheplaceEmployeeManagement.Data
 {
@@ -9,5 +10,7 @@ namespace TheplaceEmployeeManagement.Data
             : base(options)
         {
         }
+
+        public DbSet<Employee> Employees { get; set; }
     }
 }
